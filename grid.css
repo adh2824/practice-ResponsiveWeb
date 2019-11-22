@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+h1, h2 {
+    text-align:center;
+}
+
+/* 가변 공식 */
+.basic .wrap {
+    width:90%; /* 960px */
+    margin:20px auto;
+    border:4px solid red;
+}
+.basic .container {
+    width:93.75%; /* 900px */
+    margin:0 auto;
+    border:4px solid black;
+}
+.basic .container:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.basic .container div {
+    float:left;
+}
+.basic .container div:first-child {
+    background:pink;
+    width:33.333%; /* 300px/900px */
+}
+.basic .container div:last-child {
+    background:lightblue;
+    width:66.666%; /* 600px/900px */
+}
+
+/* 가변 마진 */
+.margin .wrap {
+    width:90%; /* 960px */
+    margin:20px auto;
+    border:4px solid red;
+}
+.margin .wrap:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.margin .wrap div {
+    float:left;
+    width:31.25% /* 300px */
+}
+.margin .wrap div:first-child {
+    background:gold;
+    margin-right:37.5% /*360px */
+}
+.margin .wrap div:last-child {
+    background:yellowgreen;
+}
+
+/* 가변 패딩 */
+.padding .wrap {
+    width:960px;
+    margin:20px auto;
+    border:4px solid red;
+}
+.padding .wrap:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.padding .wrap div {
+    float:left;
+    width:300px;
+}
+.padding .wrap div:first-child {
+    padding:50px;
+    background:lightgray;
+}
+.padding .wrap div:last-child {
+    padding:130px;
+    background:bisque;
+}
